@@ -62,7 +62,6 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 80);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -111,7 +110,6 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(80, 80);
             this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // TicTacToe
