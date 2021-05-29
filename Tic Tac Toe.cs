@@ -80,8 +80,24 @@ namespace WindowsFormsApplication1
                 if (turn == 9)
                     MessageBox.Show("It's a Draw", "Nice Match");
             }
-            
-    
+        }
+
+        private void Disable() 
+        {
+            try
+            {
+                foreach (Control control in Controls)
+                {
+                    Button button = (Button)control;
+
+                }
+
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
         }
 
         private void vsCPU(object sender, EventArgs e)
