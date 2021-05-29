@@ -12,7 +12,7 @@ namespace WindowsFormsApplication1
     public partial class TicTacToe : Form
     {
 
-        bool Player1 = true;
+        bool Player = true;
         byte turn = 0;
 
         public TicTacToe()
@@ -23,6 +23,12 @@ namespace WindowsFormsApplication1
         private void button_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+            if (Player)
+                button.Text = "X";
+            else
+            {
+                button.Text = "O";
+            }
         }
 
         private void vsCPU(object sender, EventArgs e)
