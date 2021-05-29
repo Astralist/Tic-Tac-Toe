@@ -29,9 +29,9 @@ namespace WindowsFormsApplication1
                 button.Text = "O";
                 Player = !Player;
                 button.Enabled = false;
-         
             
         }
+
 
         private void vsCPU(object sender, EventArgs e)
         {

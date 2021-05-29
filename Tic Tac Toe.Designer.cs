@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.a1 = new System.Windows.Forms.Button();
+            this.b2 = new System.Windows.Forms.Button();
+            this.b3 = new System.Windows.Forms.Button();
+            this.a3 = new System.Windows.Forms.Button();
+            this.c2 = new System.Windows.Forms.Button();
+            this.a2 = new System.Windows.Forms.Button();
+            this.c1 = new System.Windows.Forms.Button();
+            this.b1 = new System.Windows.Forms.Button();
+            this.c3 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vsComputerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,86 +44,86 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // a1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 80);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button_Click);
+            this.a1.Location = new System.Drawing.Point(16, 28);
+            this.a1.Name = "a1";
+            this.a1.Size = new System.Drawing.Size(80, 80);
+            this.a1.TabIndex = 0;
+            this.a1.UseVisualStyleBackColor = true;
+            this.a1.Click += new System.EventHandler(this.button_Click);
             // 
-            // button2
+            // b2
             // 
-            this.button2.Location = new System.Drawing.Point(102, 114);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 80);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button_Click);
+            this.b2.Location = new System.Drawing.Point(102, 114);
+            this.b2.Name = "b2";
+            this.b2.Size = new System.Drawing.Size(80, 80);
+            this.b2.TabIndex = 1;
+            this.b2.UseVisualStyleBackColor = true;
+            this.b2.Click += new System.EventHandler(this.button_Click);
             // 
-            // button3
+            // b3
             // 
-            this.button3.Location = new System.Drawing.Point(102, 200);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 80);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button_Click);
+            this.b3.Location = new System.Drawing.Point(102, 200);
+            this.b3.Name = "b3";
+            this.b3.Size = new System.Drawing.Size(80, 80);
+            this.b3.TabIndex = 2;
+            this.b3.UseVisualStyleBackColor = true;
+            this.b3.Click += new System.EventHandler(this.button_Click);
             // 
-            // button4
+            // a3
             // 
-            this.button4.Location = new System.Drawing.Point(16, 200);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 80);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button_Click);
+            this.a3.Location = new System.Drawing.Point(16, 200);
+            this.a3.Name = "a3";
+            this.a3.Size = new System.Drawing.Size(80, 80);
+            this.a3.TabIndex = 3;
+            this.a3.UseVisualStyleBackColor = true;
+            this.a3.Click += new System.EventHandler(this.button_Click);
             // 
-            // button5
+            // c2
             // 
-            this.button5.Location = new System.Drawing.Point(188, 114);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 80);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button_Click);
+            this.c2.Location = new System.Drawing.Point(188, 114);
+            this.c2.Name = "c2";
+            this.c2.Size = new System.Drawing.Size(80, 80);
+            this.c2.TabIndex = 4;
+            this.c2.UseVisualStyleBackColor = true;
+            this.c2.Click += new System.EventHandler(this.button_Click);
             // 
-            // button6
+            // a2
             // 
-            this.button6.Location = new System.Drawing.Point(16, 114);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 80);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button_Click);
+            this.a2.Location = new System.Drawing.Point(16, 114);
+            this.a2.Name = "a2";
+            this.a2.Size = new System.Drawing.Size(80, 80);
+            this.a2.TabIndex = 5;
+            this.a2.UseVisualStyleBackColor = true;
+            this.a2.Click += new System.EventHandler(this.button_Click);
             // 
-            // button7
+            // c1
             // 
-            this.button7.Location = new System.Drawing.Point(188, 28);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(80, 80);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button_Click);
+            this.c1.Location = new System.Drawing.Point(188, 28);
+            this.c1.Name = "c1";
+            this.c1.Size = new System.Drawing.Size(80, 80);
+            this.c1.TabIndex = 6;
+            this.c1.UseVisualStyleBackColor = true;
+            this.c1.Click += new System.EventHandler(this.button_Click);
             // 
-            // button8
+            // b1
             // 
-            this.button8.Location = new System.Drawing.Point(102, 28);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(80, 80);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button_Click);
+            this.b1.Location = new System.Drawing.Point(102, 28);
+            this.b1.Name = "b1";
+            this.b1.Size = new System.Drawing.Size(80, 80);
+            this.b1.TabIndex = 7;
+            this.b1.UseVisualStyleBackColor = true;
+            this.b1.Click += new System.EventHandler(this.button_Click);
             // 
-            // button9
+            // c3
             // 
-            this.button9.Location = new System.Drawing.Point(188, 200);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(80, 80);
-            this.button9.TabIndex = 8;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button_Click);
+            this.c3.Location = new System.Drawing.Point(188, 200);
+            this.c3.Name = "c3";
+            this.c3.Size = new System.Drawing.Size(80, 80);
+            this.c3.TabIndex = 8;
+            this.c3.UseVisualStyleBackColor = true;
+            this.c3.Click += new System.EventHandler(this.button_Click);
             // 
             // menuStrip1
             // 
@@ -163,15 +163,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(283, 298);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.c3);
+            this.Controls.Add(this.b1);
+            this.Controls.Add(this.c1);
+            this.Controls.Add(this.a2);
+            this.Controls.Add(this.c2);
+            this.Controls.Add(this.a3);
+            this.Controls.Add(this.b3);
+            this.Controls.Add(this.b2);
+            this.Controls.Add(this.a1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TicTacToe";
@@ -185,15 +185,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button a1;
+        private System.Windows.Forms.Button b2;
+        private System.Windows.Forms.Button b3;
+        private System.Windows.Forms.Button a3;
+        private System.Windows.Forms.Button c2;
+        private System.Windows.Forms.Button a2;
+        private System.Windows.Forms.Button c1;
+        private System.Windows.Forms.Button b1;
+        private System.Windows.Forms.Button c3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem gameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vsComputerToolStripMenuItem;
