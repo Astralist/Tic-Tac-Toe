@@ -42,31 +42,36 @@ namespace WindowsFormsApplication1
             //Vertical Wins
             if ((a1.Text == a2.Text) && (a2.Text == a3.Text) && (!a1.Enabled))
                 win = true;
-            if ((b1.Text == b2.Text) && (b2.Text == b3.Text) && (!b1.Enabled))
+            else if ((b1.Text == b2.Text) && (b2.Text == b3.Text) && (!b1.Enabled))
                 win = true;
-            if ((c1.Text == c2.Text) && (c2.Text == c3.Text) && (!c1.Enabled))
+            else if ((c1.Text == c2.Text) && (c2.Text == c3.Text) && (!c1.Enabled))
                 win = true;
             
             //Horizontal Wins
-            if ((a1.Text == b1.Text) && (b1.Text == c1.Text) && (!a1.Enabled))
+            else if ((a1.Text == b1.Text) && (b1.Text == c1.Text) && (!a1.Enabled))
                 win = true;
-            if ((a2.Text == b2.Text) && (b2.Text == c2.Text) && (!a2.Enabled))
+            else if ((a2.Text == b2.Text) && (b2.Text == c2.Text) && (!a2.Enabled))
                 win = true;
-            if ((a3.Text == b3.Text) && (b3.Text == c3.Text) && (!a3.Enabled))
+            else if ((a3.Text == b3.Text) && (b3.Text == c3.Text) && (!a3.Enabled))
                 win = true;
             
             //Diagonal Wins
-             if ((a1.Text == b2.Text) && (b2.Text == c3.Text) && (!a1.Enabled))
+             else if ((a1.Text == b2.Text) && (b2.Text == c3.Text) && (!a1.Enabled))
                  win = true;
-             if ((a3.Text == b2.Text) && (b2.Text == c1.Text) && (!a1.Enabled))
+             else if ((a3.Text == b2.Text) && (b2.Text == c1.Text) && (!a1.Enabled))
                  win = true;
 
+             if (win)
+             {
+                 String winner = "";
+                 if (Player)
+                     winner = "X";
+                 else
+                     winner = "O";
 
-
-
-            
-
-            
+                 MessageBox.Show(winner + "Wins", "Winner");
+            }
+    
         }
 
         private void vsCPU(object sender, EventArgs e)
