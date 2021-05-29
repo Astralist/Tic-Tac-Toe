@@ -33,7 +33,18 @@ namespace WindowsFormsApplication1
         }
 
         private void Result()
+        {
+            bool win = false;
+            if ((a1.Text == a2.Text) && (a2.Text == a3.Text))
+                win = true;
+            if ((b1.Text == b2.Text) && (b2.Text == b3.Text))
+                win = true;
+            if ((c1.Text == c2.Text) && (c2.Text == c3.Text))
+                win = true;
+            
 
+            
+        }
 
         private void vsCPU(object sender, EventArgs e)
         {
