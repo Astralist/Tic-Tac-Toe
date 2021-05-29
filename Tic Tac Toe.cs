@@ -46,7 +46,7 @@ namespace WindowsFormsApplication1
                 win = true;
             else if ((c1.Text == c2.Text) && (c2.Text == c3.Text) && (!c1.Enabled))
                 win = true;
-            
+
             //Horizontal Wins
             else if ((a1.Text == b1.Text) && (b1.Text == c1.Text) && (!a1.Enabled))
                 win = true;
@@ -58,18 +58,18 @@ namespace WindowsFormsApplication1
             //Diagonal Wins
              else if ((a1.Text == b2.Text) && (b2.Text == c3.Text) && (!a1.Enabled))
                  win = true;
-             else if ((a3.Text == b2.Text) && (b2.Text == c1.Text) && (!a1.Enabled))
+             else if ((a3.Text == b2.Text) && (b2.Text == c1.Text) && (!a3.Enabled))
                  win = true;
 
              if (win)
              {
                  String winner = "";
                  if (Player)
-                     winner = "X";
-                 else
                      winner = "O";
+                 else
+                     winner = "X";
 
-                 MessageBox.Show(winner + "Wins", "Winner");
+                 MessageBox.Show(winner + " Wins", "Winner");
             }
     
         }
