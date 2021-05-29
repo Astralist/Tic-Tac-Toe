@@ -27,20 +27,40 @@ namespace WindowsFormsApplication1
                 button.Text = "X";
             else
                 button.Text = "O";
+                
                 Player = !Player;
+                
                 button.Enabled = false;
-            
+                
+                Result();
+               
         }
 
         private void Result()
         {
             bool win = false;
-            if ((a1.Text == a2.Text) && (a2.Text == a3.Text))
+            //Vertical Wins
+            if ((a1.Text == a2.Text) && (a2.Text == a3.Text) && (!a1.Enabled))
                 win = true;
-            if ((b1.Text == b2.Text) && (b2.Text == b3.Text))
+            if ((b1.Text == b2.Text) && (b2.Text == b3.Text) && (!b1.Enabled))
                 win = true;
-            if ((c1.Text == c2.Text) && (c2.Text == c3.Text))
+            if ((c1.Text == c2.Text) && (c2.Text == c3.Text) && (!c1.Enabled))
                 win = true;
+            
+            //Horizontal Wins
+            if ((a1.Text == b1.Text) && (b1.Text == c1.Text) && (!a1.Enabled))
+                win = true;
+            if ((a2.Text == b2.Text) && (b2.Text == c2.Text) && (!a2.Enabled))
+                win = true;
+            if ((a3.Text == b3.Text) && (b3.Text == c3.Text) && (!a3.Enabled))
+                win = true;
+            
+
+
+
+
+
+
             
 
             
