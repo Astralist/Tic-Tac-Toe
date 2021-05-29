@@ -149,14 +149,14 @@
             this.vsComputerToolStripMenuItem.Name = "vsComputerToolStripMenuItem";
             this.vsComputerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.vsComputerToolStripMenuItem.Text = "Vs. Computer";
-            this.vsComputerToolStripMenuItem.Click += new System.EventHandler(this.vsComputerToolStripMenuItem_Click);
+            this.vsComputerToolStripMenuItem.Click += new System.EventHandler(this.vsCPU);
             // 
             // vsPlayerToolStripMenuItem
             // 
             this.vsPlayerToolStripMenuItem.Name = "vsPlayerToolStripMenuItem";
             this.vsPlayerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.vsPlayerToolStripMenuItem.Text = "Vs. Player";
-            this.vsPlayerToolStripMenuItem.Click += new System.EventHandler(this.vsPlayerToolStripMenuItem_Click);
+            this.vsPlayerToolStripMenuItem.Click += new System.EventHandler(this.vsPlayer);
             // 
             // TicTacToe
             // 

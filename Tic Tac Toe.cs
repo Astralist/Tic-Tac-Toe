@@ -20,17 +20,17 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void vsComputerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void vsPlayerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+        }
+
+        private void vsCPU(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vsPlayer(object sender, EventArgs e)
         {
 
         }
