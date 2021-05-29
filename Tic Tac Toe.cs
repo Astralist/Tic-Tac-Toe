@@ -32,6 +32,8 @@ namespace WindowsFormsApplication1
             
         }
 
+        private void Result()
+
 
         private void vsCPU(object sender, EventArgs e)
         {
