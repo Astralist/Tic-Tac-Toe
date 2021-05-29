@@ -66,6 +66,8 @@ namespace WindowsFormsApplication1
 
             if (win)
             {
+                Disable();
+
                 String winner = "";
                 if (Player)
                     winner = "O";
@@ -89,7 +91,7 @@ namespace WindowsFormsApplication1
                 foreach (Control control in Controls)
                 {
                     Button button = (Button)control;
-
+                    button.Enabled = false;
                 }
 
             }
@@ -107,6 +109,24 @@ namespace WindowsFormsApplication1
 
         private void vsPlayer(object sender, EventArgs e)
         {
+            Player = true;
+            turn = 0;
+            
+            try
+            {
+                foreach (Control control in Controls)
+                {
+                    Button button = (Button)control;
+                    button.Enabled = true;
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
            
         }
     }
