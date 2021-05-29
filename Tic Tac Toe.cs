@@ -11,9 +11,9 @@ namespace WindowsFormsApplication1
 {
     public partial class TicTacToe : Form
     {
-
         bool Player = true;
         byte turn = 0;
+        bool computer = false;
 
         public TicTacToe()
         {
@@ -23,21 +23,21 @@ namespace WindowsFormsApplication1
         private void button_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+
             if (Player)
                 button.Text = "X";
+
             else
                 button.Text = "O";
-                
-                Player = !Player;
-                
-                button.Enabled = false;
-                
-                turn++;
-
-                Result();
-            
-               
+            Player = !Player;
+            button.Enabled = false;
+            turn++;
+            Result();
         }
+
+
+
+
 
         private void Result()
         {
@@ -57,12 +57,12 @@ namespace WindowsFormsApplication1
                 win = true;
             else if ((a3.Text == b3.Text) && (b3.Text == c3.Text) && (!a3.Enabled))
                 win = true;
-            
+
             //Diagonal Wins
-             else if ((a1.Text == b2.Text) && (b2.Text == c3.Text) && (!a1.Enabled))
-                 win = true;
-             else if ((a3.Text == b2.Text) && (b2.Text == c1.Text) && (!a3.Enabled))
-                 win = true;
+            else if ((a1.Text == b2.Text) && (b2.Text == c3.Text) && (!a1.Enabled))
+                win = true;
+            else if ((a3.Text == b2.Text) && (b2.Text == c1.Text) && (!a3.Enabled))
+                win = true;
 
             if (win)
             {
@@ -77,14 +77,14 @@ namespace WindowsFormsApplication1
                 MessageBox.Show(winner + " Wins", "Congrats");
 
             }
-            else 
+            else
             {
                 if (turn == 9)
                     MessageBox.Show("It's a Draw", "Nice Match");
             }
         }
 
-        private void Disable() 
+        private void Disable()
         {
             try
             {
@@ -95,15 +95,16 @@ namespace WindowsFormsApplication1
                 }
 
             }
-            catch 
+            catch
             {
-                
-               
+
+
             }
         }
 
         private void vsCPU(object sender, EventArgs e)
         {
+            computer = true;
 
         }
 
@@ -111,7 +112,7 @@ namespace WindowsFormsApplication1
         {
             Player = true;
             turn = 0;
-            
+
             try
             {
                 foreach (Control control in Controls)
@@ -123,11 +124,42 @@ namespace WindowsFormsApplication1
                 }
 
             }
-            catch 
-            {
+            catch
+            { }
 
-            }
-           
+
         }
+        //private void CPU()
+        //{
+        //    Button move = null;
+
+        //    move = priority_move("O");
+        //    if (move == null)
+        //    {
+        //        move = priority_move("X");
+        //        if (move == null)
+        //        {
+        //            move = CPU_move1();
+        //            if (move == null)
+        //            {
+        //                move = CPU_move2();
+        //            }
+        //        }
+        //    }
+        //    move.PerformClick();
+
+        //}
+
+        //private Button priority_move(string mark)
+        //{
+        //    if ((a1.Text == mark) && (a2.Text == mark) && (a3.Text == ""))
+        //        return a3;
+        //}
+        //private Button CPU_move1()
+        //{
+        //}
+        //private Button CPU_move2()
+        //{
+        //}
     }
 }

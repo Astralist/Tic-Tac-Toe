@@ -141,8 +141,8 @@
             this.vsComputerToolStripMenuItem,
             this.vsPlayerToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.gameToolStripMenuItem.Text = "Game";
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.gameToolStripMenuItem.Text = "Game Mode";
             // 
             // vsComputerToolStripMenuItem
             // 
