@@ -56,9 +56,9 @@ namespace WindowsFormsApplication1
                 win = true;
             
             //Diagonal Wins
-             if ((a1.Text == b1.Text) && (b1.Text == c1.Text) && (!a1.Enabled))
+             if ((a1.Text == b2.Text) && (b2.Text == c3.Text) && (!a1.Enabled))
                  win = true;
-             if ((a1.Text == b1.Text) && (b1.Text == c1.Text) && (!a1.Enabled))
+             if ((a3.Text == b2.Text) && (b2.Text == c1.Text) && (!a1.Enabled))
                  win = true;
 
 
