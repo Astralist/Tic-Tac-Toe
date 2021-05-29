@@ -32,7 +32,10 @@ namespace WindowsFormsApplication1
                 
                 button.Enabled = false;
                 
+                turn++;
+
                 Result();
+            
                
         }
 
@@ -61,16 +64,23 @@ namespace WindowsFormsApplication1
              else if ((a3.Text == b2.Text) && (b2.Text == c1.Text) && (!a3.Enabled))
                  win = true;
 
-             if (win)
-             {
-                 String winner = "";
-                 if (Player)
-                     winner = "O";
-                 else
-                     winner = "X";
+            if (win)
+            {
+                String winner = "";
+                if (Player)
+                    winner = "O";
+                else
+                    winner = "X";
 
-                 MessageBox.Show(winner + " Wins", "Winner");
+                MessageBox.Show(winner + " Wins", "Congrats");
+
             }
+            else 
+            {
+                if (turn == 9)
+                    MessageBox.Show("It's a Draw", "Nice Match");
+            }
+            
     
         }
 
@@ -81,7 +91,7 @@ namespace WindowsFormsApplication1
 
         private void vsPlayer(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
