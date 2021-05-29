@@ -39,7 +39,6 @@
             this.c3 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vsComputerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vsPlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -138,24 +137,16 @@
             // gameToolStripMenuItem
             // 
             this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vsComputerToolStripMenuItem,
             this.vsPlayerToolStripMenuItem});
             this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
-            this.gameToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.gameToolStripMenuItem.Text = "Game Mode";
-            // 
-            // vsComputerToolStripMenuItem
-            // 
-            this.vsComputerToolStripMenuItem.Name = "vsComputerToolStripMenuItem";
-            this.vsComputerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.vsComputerToolStripMenuItem.Text = "Vs. Computer";
-            this.vsComputerToolStripMenuItem.Click += new System.EventHandler(this.vsCPU);
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.gameToolStripMenuItem.Text = "Game";
             // 
             // vsPlayerToolStripMenuItem
             // 
             this.vsPlayerToolStripMenuItem.Name = "vsPlayerToolStripMenuItem";
             this.vsPlayerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.vsPlayerToolStripMenuItem.Text = "Vs. Player";
+            this.vsPlayerToolStripMenuItem.Text = "New Game";
             this.vsPlayerToolStripMenuItem.Click += new System.EventHandler(this.vsPlayer);
             // 
             // TicTacToe
@@ -196,7 +187,6 @@
         private System.Windows.Forms.Button c3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem gameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vsComputerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vsPlayerToolStripMenuItem;
     }
 }

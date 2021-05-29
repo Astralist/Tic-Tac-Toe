@@ -33,7 +33,12 @@ namespace WindowsFormsApplication1
             button.Enabled = false;
             turn++;
             Result();
+            if (!Player && computer)
+            {
+                computer_move();
+            }
         }
+        
 
 
 
@@ -102,12 +107,6 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void vsCPU(object sender, EventArgs e)
-        {
-            computer = true;
-
-        }
-
         private void vsPlayer(object sender, EventArgs e)
         {
             Player = true;
@@ -126,40 +125,7 @@ namespace WindowsFormsApplication1
             }
             catch
             { }
-
-
         }
-        //private void CPU()
-        //{
-        //    Button move = null;
-
-        //    move = priority_move("O");
-        //    if (move == null)
-        //    {
-        //        move = priority_move("X");
-        //        if (move == null)
-        //        {
-        //            move = CPU_move1();
-        //            if (move == null)
-        //            {
-        //                move = CPU_move2();
-        //            }
-        //        }
-        //    }
-        //    move.PerformClick();
-
-        //}
-
-        //private Button priority_move(string mark)
-        //{
-        //    if ((a1.Text == mark) && (a2.Text == mark) && (a3.Text == ""))
-        //        return a3;
-        //}
-        //private Button CPU_move1()
-        //{
-        //}
-        //private Button CPU_move2()
-        //{
-        //}
+       
     }
 }
