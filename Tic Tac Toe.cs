@@ -95,10 +95,10 @@ namespace WindowsFormsApplication1
                 }
 
             }
-            catch (Exception)
+            catch 
             {
                 
-                throw;
+               
             }
         }
 
@@ -118,14 +118,14 @@ namespace WindowsFormsApplication1
                 {
                     Button button = (Button)control;
                     button.Enabled = true;
+                    button.Text = "";
 
                 }
 
             }
-            catch (Exception)
+            catch 
             {
 
-                throw;
             }
            
         }
