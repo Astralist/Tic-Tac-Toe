@@ -11,12 +11,26 @@ namespace WindowsFormsApplication1
 {
     public partial class TicTacToe : Form
     {
+
+        bool Player1 = true;
+        byte turn = 0;
+
         public TicTacToe()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void vsComputerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vsPlayerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Click(object sender, EventArgs e)
         {
 
         }
