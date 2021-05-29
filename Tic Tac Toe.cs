@@ -26,9 +26,11 @@ namespace WindowsFormsApplication1
             if (Player)
                 button.Text = "X";
             else
-            {
                 button.Text = "O";
-            }
+                Player = !Player;
+                button.Enabled = false;
+         
+            
         }
 
         private void vsCPU(object sender, EventArgs e)
